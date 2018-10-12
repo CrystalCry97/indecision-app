@@ -1,0 +1,42 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add babel-prese-react@6.24.1 babel-preset-env@1.5.2
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  8.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/babel-prese-react: Not found
+      at Request.params.callback [as _callback] (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:61073:18)
+      at Request.self.callback (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:120166:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:121138:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:121060:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "indecision-app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Amal Syahmi",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
