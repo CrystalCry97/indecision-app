@@ -25,8 +25,30 @@ var IndecisionApp = function (_React$Component) {
         };
         return _this;
     }
+    // 3 important lifecycles
+    //will fire up for component that doesnt change (static)
+
 
     _createClass(IndecisionApp, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            console.log('fetching data!');
+        }
+        //will fire up for component that always update (dynamic)
+
+    }, {
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate(prevProps, prevState) {
+            console.log('save data!');
+        }
+        //will fire up when changing pages/ rerendered somthg new (dynamic)
+
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            console.log('componentWillUnmount!');
+        }
+    }, {
         key: 'handleDeleteOptions',
         value: function handleDeleteOptions() {
             this.setState(function () {

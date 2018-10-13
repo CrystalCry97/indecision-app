@@ -9,6 +9,19 @@ class IndecisionApp extends React.Component{
             options: props.options
         };
     }
+    // 3 important lifecycles
+    //will fire up for component that doesnt change (static)
+    componentDidMount(){
+        console.log('fetching data!');
+    }
+    //will fire up for component that always update (dynamic)
+    componentDidUpdate(prevProps, prevState){
+        console.log('save data!');
+    }
+    //will fire up when changing pages/ rerendered somthg new (dynamic)
+    componentWillUnmount (){
+        console.log('componentWillUnmount!');
+    }
     handleDeleteOptions(){
         this.setState(() => ({ options: [] }));
     }
