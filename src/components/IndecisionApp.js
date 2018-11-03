@@ -7,8 +7,8 @@ import OptionModal from './OptionModal';
 
 export default class IndecisionApp extends React.Component{
     state ={
-        options: [],
-        selectedOption: undefined
+        options: [], //all options data in array
+        selectedOption: undefined //data that will be selected based on random generator from handlePick
     };
 
     handleDeleteOptions = () => {
@@ -75,14 +75,14 @@ export default class IndecisionApp extends React.Component{
 
         return(
             <div>
-                <Header subtitle={subtitle}/>
+                <Header subtitle={subtitle}/> {/* Call header with parameter subtitle (just4exercise. you can just put props in header.js also) */}
                 <div className="container">
                     <Action 
-                        hasOptions={this.state.options.length > 0}
-                        handlePick={this.handlePick}/>
+                        hasOptions={this.state.options.length > 0} //send yes if option(s) exist
+                        handlePick={this.handlePick}/> {/* send function handlePick to Action.js */}
                     <div className="widget">
                         <Options 
-                            options={this.state.options}
+                            options={this.state.options} //send options data
                             handleDeleteOptions={this.handleDeleteOptions}
                             handleDeleteOption={this.handleDeleteOption}/>
                         <AddOption
